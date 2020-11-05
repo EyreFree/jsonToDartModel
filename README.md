@@ -2,7 +2,7 @@
 
 online tool for convert json to dart code
 
-click [https://ashamp.github.io/jsonToDartModel/](https://ashamp.github.io/jsonToDartModel/)
+click [http://www.eyrefree.org/jsonToDartModel/](http://www.eyrefree.org/jsonToDartModel/)
 
 ## Feature
 - online use, without plugin
@@ -28,14 +28,32 @@ click [https://ashamp.github.io/jsonToDartModel/](https://ashamp.github.io/jsonT
 json string may looks like
 ``` json
 {
+  "some_snake_case_prop": "",
   "anInt": 1,
   "aDouble": 2.3,
   "aString": "hello",
   "aBool": false,
   "anObj": {
     "name": "x",
-    "age": 18.0
-  }
+    "age": 18.1
+  },
+  "anObjList": [
+    {
+      "name": "y"
+    }
+  ],
+  "aStrList": [
+    "something"
+  ],
+  "multidimensional": [
+    [
+      [
+        {
+          "name": "y"
+        }
+      ]
+    ]
+  ]
 }
 ```
 named it `SomeRootEntity` and convert to dart
